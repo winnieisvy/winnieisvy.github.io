@@ -5,48 +5,78 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sign up page</title>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-         
+    
+    <style type="text/css">
+        
+          .sign-up-page{
+            margin: 40px;
+            }
+            
+            /* Fix alignment issue of label on extra small devices in Bootstrap 3.2 */
+            .form-horizontal .control-label{
+            padding-top: 7px;
+            }
+        
+    </style>
+    
+     <title>Sign Up Page</title>
     
 </head>
 <body>
     
-    <div class="container"> 
-    
-    <div class="page-header">
-    <h1><em>My Little Family</h1></em>
-    </div>
-    
-    
-    
-     
-    
-
-   <form class="form-horizontal" role="form">
-        <div class="form-group">
-            <label for="inputFirstName" class="col-sm-4 control-label">First Name</label>
-            <input type="FirstName" class="form-control" id="inputEmail3" placeholder="FirstName">
-        </div>       
+<div class="sign-up-page">
         
-        <div class="form-group">
-            <label for="inputLastName" class="col-sm-4 control-label">Last Name</label>
-            <input type="LastName" class="form-control" id="inputEmail3" placeholder="LastName">
-        </div>           
-        
-        <div class="form-group">
-            <label for="inputEmail" class="col-sm-4 control-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        </div>
-       
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Sign Up</button>
+        <div class="page-header">
+            <h1>
+                <em>My Little Family</em>
+            </h1>
+        </div>      
+    
+    
+    
+    <div class="sigu-up-form">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail" class="control-label col-xs-2">Email</label>
+                <div class="col-xs-6">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
             </div>
-    </form>
+            <div class="form-group">
+                <label for="inputFirstName" class="control-label col-xs-2">First Name</label>
+                <div class="col-xs-6">
+                <input type="firstname" class="form-control" id="inputFirstName" placeholder="First Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputLastName" class="control-label col-xs-2">Last Name</label>
+                <div class="col-xs-6">
+                <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+             </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button type="signup" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>    
+      
     
-    
+</div>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

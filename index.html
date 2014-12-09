@@ -7,23 +7,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
+    <style type="text/css">
+    h2{
+    margin: 0;     
+    color: ffffcc;
+    padding-top: 90px;
+    font-size: 52px;
+    font-style: italic;
+    font-family: "Arial", "Helvetica", sans-serif;
+    }           
+        
+    .carousel{
+            margin-top: 40px;
+            }
+    
+    .home-page{
+            margin: 40px;
+            }
+    
+    </style>
+    
+
     <title>My Little Family</title>
     
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-
-    <style type="text/css">
-	h1 {
-		color: #C0C0C0;
-            }   
-
-    </style>
 </head>
     
  
-<body>    
-  
-    <div class="container"> 
+<body>
+    <div class="home-page">
         
         <div class="page-header">
             <h1>
@@ -31,82 +48,116 @@
             </h1>
         </div>
         
-        <ul class="nav nav-tabs">
-            <li role="presentation" class="active">
-                <a href="index.html">
+    <div class="navbar">    
+        <nav role="navigation" class="navbar navbar-default">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active">
+                    <a href="index.html">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                         Our Family
-                </a>
-            </li>
+                    </a>
+                 </li>
             
-            <li role="presentation">
-                <a href="our-life.html">
-                    <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
+            
+              
+                <li class="dropdown-our-life">
+                    
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                        <span class="glyphicon glyphicon-plane" aria-hidden="true"></span>
                         Our Life
-                </a>
-            </li>
+                        <b class="caret"></b>
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">2014</a></li>
+                            <li><a href="#">2013</a></li>
+                             <li><a href="#">2012</a></li>
+                        </ul>
+                </li>
+                
             
-            <li role="presentation">
-                <a href="sweet-home.html">
+                 <li role="presentation">
+                    <a href="sweet-home.html">
                     <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
                         Sweet Home
-                </a>
-            </li>
+                    </a>
+                </li>
             
-            <li role="presentation">
-                <a href="sign-up-page.html">
-                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                        Sign Up
-                </a>
-            </li>
-        </ul>
-                   
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
+              
+                <form role="search" class="navbar-form navbar-right">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <div class="form-group">   
+                        <input type="text" placeholder="Search" class="form-control">   
+                    </div>
+                </form>
+                
+               
+                <ul class="nav navbar-nav navbar-right">
+                      <li>
+                            <a href="sign-up-page.html">
+                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            Sign Up
+                            </a>
+                        </li> 
+                </ul>
+            </ul>
+        </nav>
+       
+       
+     <div class="My Carousel">   
+        
+        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <!-- Carousel indicators -->
+             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-     
-       
+    
+        
+       <!-- Carousel items -->
+         
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="images/ma-black-white.png" alt="...">
                     <div class="carousel-caption">
-                        <h3>Two Little Angels</h3>
+                        <h2>Two Little Angels</h2>
                     </div>
                 </div>
-        
+            
+      
                 <div class="item">
                   <img src="images/ma-flower-ring.png" alt="...">
                     <div class="carousel-caption">
-                      <h3>Spring in Beijing 2013</h3>
+                      <h2>Beautiful Spring</h2>
                     </div>
                 </div>
        
                 <div class="item">
                   <img src="images/alicia-snowman.png" alt="...">
                     <div class="carousel-caption">
-                      <h3>All white</h3>
+                      <h2>All White</h2>
                     </div>
                 </div>
+            
             </div>
-        </div>
-     
-      <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            
+      
+        
+        
+        
+            
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
-
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
+   </div>
+    
+    
 </body>
+
 </html>
